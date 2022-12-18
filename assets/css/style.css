@@ -1,0 +1,36 @@
+:root {
+    --text: white;
+    --heading: #00cbb6;
+    --sub: #ef8ef0; 
+}
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #2f3d57;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4 {
+    color: var(--heading);
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 75px;
+}
+
+.h1subhead {
+    font-size: 35px;
+}
+
+p {
+    color: var(--text);
+    font-weight: 300;
+}
+
+section {
+    height: 100vh;
+}
+
