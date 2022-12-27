@@ -15,7 +15,6 @@ html, body {
 
 main {
     margin: 0 auto;
-
 }
 
 h1 {
@@ -45,11 +44,13 @@ p {
 }
 
 section {
+    margin: 0 auto;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     scroll-snap-align: start;
+    width: 1200px;
 }
 
 #container {
@@ -58,6 +59,7 @@ section {
     overflow-y: scroll;
     height: 100vh;
 
+    
 }
 
 #avatar {
