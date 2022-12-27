@@ -10,11 +10,12 @@ html, body {
     padding: 0;
     background-color: #2f3d57;
     font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
 }
 
 main {
-    width: 1200px;
     margin: 0 auto;
+
 }
 
 h1 {
@@ -45,12 +46,17 @@ p {
 
 section {
     height: 100vh;
-}
-
-.container {
     display: flex;
     justify-content: center;
     align-items: center;
+    scroll-snap-align: start;
+}
+
+#container {
+    margin: 0 auto;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
 
 }
 
