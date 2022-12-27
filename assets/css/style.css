@@ -45,7 +45,7 @@ p {
 
 section {
     margin: 0 auto;
-    height: 100vh;
+    height: 101vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,9 +57,7 @@ section {
     margin: 0 auto;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
-    height: 100vh;
-
-    
+    height: 100vh;    
 }
 
 #avatar {
@@ -76,9 +74,18 @@ section {
     width:50%
 }
 
+/* .hide {
+    opacity: 0;
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+} */
+
 
 @media screen and (max-width: 1200px) {
-    main {
+    section {
         width:95%
     }
 }
