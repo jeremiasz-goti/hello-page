@@ -29,36 +29,96 @@
         </section>
 
         <section id="work" class="hide">
-
-                <p>work</p>
+                <h2>Work Exp</h2>
       
         </section>
 
         <section id="tech" class="hide">
 
-                <p>tech</p>
+                <h2>Tech Exp</h2>
+                <div class="cards">
+                        <div class="card">
+                          <div class="icon"></div>
+                          <h3>Card Title</h3>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        <div class="card">
+                                <div class="icon"></div>
+                                <h3>Card Title</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                              </div>
+                
+                <div class="card">
+                        <div class="icon"></div>
+                        <h3>Card Title</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      </div>
+                </div>
+
           
         </section>
 
         <section id="projects" class="hide">
 
-                <p>projects</p>
-      
+                <h2>Projects</h2>
+                <div class="slider">
+                        <div class="slide">
+                          <div class="column">
+                            <!-- content for the first column of the first slide goes here -->
+                            <p>1</p>
+                          </div>
+                          <div class="column">
+                            <!-- content for the second column of the first slide goes here -->
+                            <p>2</p>
+                          </div>
+                        </div>
+                        <div class="slide">
+                          <div class="column">
+                                <p>second</p>
+                            <!-- content for the first column of the second slide goes here -->
+                          </div>
+                          <div class="column">
+                                <p>second</p>
+                            <!-- content for the second column of the second slide goes here -->
+                          </div>
+                        </div>
+                        <!-- additional slides go here -->
+                      </div>
         </section>
 
-        <section id="blog" class="hide">
-
-                <p>blog</p>
-         
-        </section>
 
         <section id="contact" class="hide"> 
 
-                <p>contact</p>
+                <h2>Contact</h2>
          
         </section>
         </div>
     </main>
+    <script>
+        // set up variables for the slider
+        var currentSlide = 0;
+        var slides = document.querySelectorAll('.slider .slide');
+        var numSlides = slides.length;
+      
+        // show the first slide
+        slides[currentSlide].style.display = 'flex';
+      
+        // define a function to transition to the next slide
+        function nextSlide() {
+          // hide the current slide
+          slides[currentSlide].style.display = 'none';
+          // move to the next slide
+          currentSlide = (currentSlide + 1) % numSlides;
+          // show the next slide
+          slides[currentSlide].style.display = 'flex';
+        }
+      
+        // set up an interval to transition to the next slide every 5 seconds
+        setInterval(nextSlide, 5000);
+      </script>
+
+      
+      
     <script src="assets/js/app.js"></script>
 </body>
 </html>
