@@ -48,7 +48,7 @@ section {
     height: 100vh;
     scroll-snap-align: start;
     width: 1200px;
-    padding-top: 50px;
+
 }
 
 #info {
@@ -57,9 +57,9 @@ section {
     align-items: center;
 }
 
-/* #work, #tech, #projects, #contact {
-    padding-top: 50px;
-} */
+#work, #tech, #projects, #contact {
+    padding-top: 20px;
+}
 
 #container {
     margin: 0 auto;
@@ -122,7 +122,6 @@ section {
   }
   .card {
     flex: 2;
-    border: 1px solid black;
     margin: 20px;
     display: flex;
     flex-direction: column;
@@ -132,14 +131,13 @@ section {
     height: 50px;
     background-color: lightblue;
     border-radius: 25px;
-    margin: 20px auto;
+    margin: 0 auto;
   }
   .card h3 {
     font-size: 18px;
-    margin: 20px;
+    text-align: center;
+    margin-bottom: 0;
   }
   .card p {
     font-size: 14px;
-    margin: 20px;
-    line-height: 24px;
   }
